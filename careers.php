@@ -14,11 +14,15 @@ $benefits = [
 ];
 ?>
 <section class="hero hero-careers">
-  <div class="hero-shade"></div>
-  <div class="container hero-center">
-    <p class="eyebrow light"><?= e(SITE_TAGLINE) ?></p>
-    <h1>Find a Career</h1>
-    <p class="hero-sub">Start your career with OMNITECH.</p>
+  <div class="container careers-hero">
+    <div class="careers-hero-copy">
+      <p class="eyebrow light"><?= e(SITE_TAGLINE) ?></p>
+      <h1>Find a Career</h1>
+      <p class="hero-sub">Start your career with OMNITECH.</p>
+    </div>
+    <figure class="careers-hero-art">
+      <img src="<?= e(asset('img/careers-hero.png')) ?>" alt="People joining OMNITECH, with health coverage, paid time off, and open technology roles">
+    </figure>
   </div>
 </section>
 

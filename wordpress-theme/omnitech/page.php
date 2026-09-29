@@ -24,6 +24,18 @@
         </figure>
       </div>
     </section>
+  <?php elseif (is_page('contact')) : ?>
+    <section class="hero hero-contact">
+      <div class="container contact-hero">
+        <div class="contact-hero-copy">
+          <p class="eyebrow light"><?php echo esc_html(get_bloginfo('description')); ?></p>
+          <h1><?php the_title(); ?></h1>
+        </div>
+        <figure class="contact-hero-art">
+          <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/contact-hero.png'); ?>" alt="The Vienna office, with a map pin, email, phone, and a message">
+        </figure>
+      </div>
+    </section>
   <?php else : ?>
   <section class="page-head">
     <div class="container">

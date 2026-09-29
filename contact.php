@@ -61,10 +61,14 @@ render_header(
 );
 ?>
 <section class="hero hero-contact">
-  <div class="hero-shade"></div>
-  <div class="container hero-center">
-    <p class="eyebrow light"><?= e(SITE_TAGLINE) ?></p>
-    <h1>Contact Us</h1>
+  <div class="container contact-hero">
+    <div class="contact-hero-copy">
+      <p class="eyebrow light"><?= e(SITE_TAGLINE) ?></p>
+      <h1>Contact Us</h1>
+    </div>
+    <figure class="contact-hero-art">
+      <img src="<?= e(asset('img/contact-hero.png')) ?>" alt="The Vienna office, with a map pin, email, phone, and a message">
+    </figure>
   </div>
 </section>
 

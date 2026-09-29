@@ -1,8 +1,14 @@
 <?php get_header(); ?>
-<section class="page-head">
-  <div class="container">
-    <p class="eyebrow"><?php echo esc_html(get_bloginfo('description')); ?></p>
-    <h1><?php esc_html_e('Open Job Positions', 'omnitech'); ?></h1>
+<section class="hero hero-careers">
+  <div class="container careers-hero">
+    <div class="careers-hero-copy">
+      <p class="eyebrow light"><?php echo esc_html(get_bloginfo('description')); ?></p>
+      <h1><?php esc_html_e('Find a Career', 'omnitech'); ?></h1>
+      <p class="hero-sub"><?php esc_html_e('Start your career with OMNITECH.', 'omnitech'); ?></p>
+    </div>
+    <figure class="careers-hero-art">
+      <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/careers-hero.png'); ?>" alt="People joining OMNITECH, with health coverage, paid time off, and open technology roles">
+    </figure>
   </div>
 </section>
 <section class="section jobs-open">
