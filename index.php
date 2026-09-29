@@ -45,9 +45,6 @@ $practiceArt = [
     <span class="hero-grid"></span>
   </div>
   <div class="hero-shade"></div>
-  <figure class="hero-side hero-side-left">
-    <img src="<?= e(asset('img/consult-data.png')) ?>" alt="" width="640" height="853">
-  </figure>
   <div class="container hero-layout">
     <div class="hero-copy">
       <p class="eyebrow light hero-kicker"><?= e(SITE_TAGLINE) ?></p>
@@ -92,9 +89,6 @@ $practiceArt = [
       <li><strong><?= count(services()) ?></strong><span>Practices from data to cloud</span></li>
     </ul>
   </div>
-  <figure class="hero-side hero-side-right">
-    <img src="<?= e(asset('img/consult-cloud.png')) ?>" alt="" width="640" height="853">
-  </figure>
 </section>
 
 <section class="section work-section" id="work">
