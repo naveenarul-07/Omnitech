@@ -15,7 +15,7 @@
       <?php the_custom_logo(); ?>
     <?php else : ?>
       <a class="brand" href="<?php echo esc_url(home_url('/')); ?>" aria-label="<?php echo esc_attr(get_bloginfo('name')); ?>">
-        <span class="brand-name"><?php bloginfo('name'); ?></span>
+        <img class="brand-mark" src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/logo.png'); ?>" alt="">
       </a>
     <?php endif; ?>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">

@@ -28,6 +28,29 @@ function omnitech_setup(): void
 }
 add_action('after_setup_theme', 'omnitech_setup');
 
+function omnitech_home_body_class(array $classes): array
+{
+    if (is_front_page()) {
+        $classes[] = 'page-home';
+    }
+
+    return $classes;
+}
+add_filter('body_class', 'omnitech_home_body_class');
+
+function omnitech_mark(string $accent = '#b5cf4a', int $size = 42): string
+{
+    $accent = esc_attr($accent);
+    $size = max(16, $size);
+
+    return <<<SVG
+<svg class="c-mark" width="{$size}" height="{$size}" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+  <path fill="#234576" d="M48.5 10.2C33.2 9.2 20 19.6 20 32.4 20 46 33.6 55.6 48.8 54.2l-4.1-8.6c-8.4.4-15.2-5.4-15.2-13.2 0-7.6 6.5-13.2 14.8-12.8l4.2-9.4z"/>
+  <path fill="{$accent}" d="M52 16.4c-9.6-.2-17.2 6.2-17.2 15.8 0 9.2 7.2 15.4 16.6 15.2l-3.2-7.6c-6.2.2-10.4-3.6-10.4-7.6 0-4.2 4.4-7.8 10.6-7.6l3.6-8.2z"/>
+</svg>
+SVG;
+}
+
 function omnitech_enqueue_assets(): void
 {
     $theme_version = wp_get_theme()->get('Version');
