@@ -18,7 +18,7 @@ render_header(
 
 <section class="section">
   <div class="container center">
-    <?= c_mark('#8BC53F', 48) ?>
+    <?= c_mark('#B4D33D', 48) ?>
     <p class="eyebrow">IT Solutions &amp; Services</p>
   </div>
   <div class="container card-grid">

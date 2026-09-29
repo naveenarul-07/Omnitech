@@ -24,13 +24,13 @@ $benefits = [
 
 <section class="section">
   <div class="container">
-    <?= c_mark('#8BC53F', 48) ?>
+    <?= c_mark('#B4D33D', 48) ?>
     <h2>Benefits</h2>
     <div class="benefit-grid">
       <?php foreach ($benefits as [$title, $copy]): ?>
         <article class="benefit-card">
           <span class="benefit-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48"><rect x="14" y="10" width="20" height="26" rx="2" fill="none" stroke="#4154f1" stroke-width="2"/><path d="M18 18h12M18 24h12M18 30h8" stroke="#4154f1" stroke-width="2"/></svg>
+            <svg viewBox="0 0 48 48"><rect x="14" y="10" width="20" height="26" rx="2" fill="none" stroke="#234576" stroke-width="2"/><path d="M18 18h12M18 24h12M18 30h8" stroke="#234576" stroke-width="2"/></svg>
           </span>
           <h3><?= e($title) ?></h3>
           <p><?= e($copy) ?></p>
@@ -43,7 +43,7 @@ $benefits = [
 <section class="section jobs-open" id="positions">
   <div class="container jobs-intro">
     <div>
-      <?= c_mark('#8BC53F', 46) ?>
+      <?= c_mark('#B4D33D', 46) ?>
       <p class="eyebrow">join the team</p>
       <h2>Open Job Positions</h2>
       <p>If you’re looking for a place that’s more than just a job, a place where you can join a team, look no further.</p>
@@ -66,7 +66,7 @@ $benefits = [
   <div class="container job-list" id="job-list">
     <?php foreach (jobs() as $job): ?>
       <article class="job-row">
-        <?= c_mark('#8BC53F', 40) ?>
+        <?= c_mark('#B4D33D', 40) ?>
         <h3><?= e($job['title']) ?></h3>
         <a class="btn btn-outline lime" href="<?= e(url('career/' . $job['slug'])) ?>">Apply Now</a>
       </article>

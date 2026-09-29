@@ -85,7 +85,7 @@ render_header(
       <?php endif; ?>
       <div class="contact-grid">
         <div class="contact-info">
-          <?= c_mark('#8BC53F', 48) ?>
+          <?= c_mark('#B4D33D', 48) ?>
           <h2>Office Address</h2>
           <p><?= e(SITE_ADDRESS_1) ?><br><?= e(SITE_ADDRESS_2) ?></p>
           <h2>Contact Info</h2>
