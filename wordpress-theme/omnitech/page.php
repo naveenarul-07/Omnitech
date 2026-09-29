@@ -12,6 +12,18 @@
         </figure>
       </div>
     </section>
+  <?php elseif (is_page('solutions')) : ?>
+    <section class="hero hero-solutions">
+      <div class="container solutions-hero">
+        <div class="solutions-hero-copy">
+          <p class="eyebrow light"><?php echo esc_html(get_bloginfo('description')); ?></p>
+          <h1><?php the_title(); ?></h1>
+        </div>
+        <figure class="solutions-hero-art">
+          <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/solutions-hero.png'); ?>" alt="Data, contracts, analytics, cloud, applications, and databases connected as one system">
+        </figure>
+      </div>
+    </section>
   <?php else : ?>
   <section class="page-head">
     <div class="container">

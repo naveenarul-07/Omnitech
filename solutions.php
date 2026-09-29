@@ -9,10 +9,14 @@ render_header(
 );
 ?>
 <section class="hero hero-solutions">
-  <div class="hero-shade"></div>
-  <div class="container hero-center">
-    <p class="eyebrow light"><?= e(SITE_TAGLINE) ?></p>
-    <h1>Enterprise IT<br>Solutions &amp; Services</h1>
+  <div class="container solutions-hero">
+    <div class="solutions-hero-copy">
+      <p class="eyebrow light"><?= e(SITE_TAGLINE) ?></p>
+      <h1>Enterprise IT<br>Solutions &amp; Services</h1>
+    </div>
+    <figure class="solutions-hero-art">
+      <img src="<?= e(asset('img/solutions-hero.png')) ?>" alt="Data, contracts, analytics, cloud, applications, and databases connected as one system">
+    </figure>
   </div>
 </section>
 
