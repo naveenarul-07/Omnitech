@@ -19,7 +19,7 @@
       </div>
     </nav>
     <div class="container footer-meta">
-      <p>Copyright &copy; 2021 OMNITECH Systems</p>
+      <p>Copyright &copy; <?= date('Y') ?> OMNITECH Systems</p>
       <a href="<?= e(url('privacy')) ?>">Privacy Policy</a>
       <a class="linkedin" href="<?= e(LINKEDIN_URL) ?>" target="_blank" rel="noopener noreferrer" aria-label="OMNITECH Systems on LinkedIn">in</a>
     </div>

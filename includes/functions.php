@@ -67,12 +67,14 @@ function site_logo(bool $compact = false): string
     return <<<SVG
 <a class="brand" href="/" aria-label="{$label}">
   <svg class="brand-mark" viewBox="0 0 250 52" role="img" aria-hidden="true">
-    <circle cx="24" cy="26" r="18" fill="none" stroke="#10244d" stroke-width="2.2"/>
-    <ellipse cx="24" cy="26" rx="8" ry="18" fill="none" stroke="#10244d" stroke-width="1.6"/>
-    <path d="M6 26h36M8.5 18.5h31M8.5 33.5h31" fill="none" stroke="#10244d" stroke-width="1.4"/>
-    <path d="M24 8c4 5 6 11 6 18s-2 13-6 18c-4-5-6-11-6-18s2-13 6-18z" fill="none" stroke="#10244d" stroke-width="1.2"/>
-    <text x="52" y="24" fill="#10244d" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="0.5">OMNITECH</text>
-    <text x="52" y="40" fill="#10244d" font-family="IBM Plex Sans, Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="3.2">SYSTEMS</text>
+    <g class="brand-globe">
+      <circle cx="24" cy="26" r="18" fill="none" stroke="#10244d" stroke-width="2.2"/>
+      <ellipse cx="24" cy="26" rx="8" ry="18" fill="none" stroke="#10244d" stroke-width="1.6"/>
+      <path d="M6 26h36M8.5 18.5h31M8.5 33.5h31" fill="none" stroke="#10244d" stroke-width="1.4"/>
+      <path d="M24 8c4 5 6 11 6 18s-2 13-6 18c-4-5-6-11-6-18s2-13 6-18z" fill="none" stroke="#10244d" stroke-width="1.2"/>
+    </g>
+    <text x="52" y="24" fill="#10244d" font-family="Syne, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="0.5">OMNITECH</text>
+    <text x="52" y="40" fill="#10244d" font-family="Manrope, Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="3.2">SYSTEMS</text>
   </svg>
 </a>
 SVG;
