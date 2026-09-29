@@ -1098,7 +1098,7 @@ input[type="file"] {
 .practice-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 14px;
+  gap: 10px;
 }
 .practice {
   position: relative;
@@ -1107,7 +1107,7 @@ input[type="file"] {
   flex-direction: column;
   min-height: 0;
   padding: 0;
-  border-radius: 22px;
+  border-radius: 16px;
   color: var(--navy);
   background: #ffffff;
   border: 2px solid var(--navy);
@@ -1118,7 +1118,8 @@ input[type="file"] {
 .practice:nth-child(2) {
   grid-column: span 6;
   flex-direction: row;
-  min-height: 220px;
+  min-height: 0;
+  align-items: stretch;
 }
 .practice:hover {
   transform: translateY(-6px);
@@ -1127,16 +1128,19 @@ input[type="file"] {
 }
 .practice-art {
   position: relative;
-  flex: 1 1 50%;
+  flex: 0 0 92px;
   min-width: 0;
-  min-height: 160px;
+  height: 92px;
   overflow: hidden;
   background: transparent;
   border: 0;
 }
 .practice:nth-child(1) .practice-art,
 .practice:nth-child(2) .practice-art {
-  flex: 1 1 50%;
+  flex: 0 0 38%;
+  height: auto;
+  min-height: 118px;
+  align-self: stretch;
   border: 0;
 }
 .practice-art img {
@@ -1146,7 +1150,7 @@ input[type="file"] {
   height: 100%;
   object-fit: contain;
   object-position: center;
-  padding: 16px;
+  padding: 8px 10px;
   box-sizing: border-box;
   transform: none;
   filter: none;
@@ -1154,14 +1158,14 @@ input[type="file"] {
 }
 .practice-art::after { content: none; }
 .practice-copy {
-  flex: 1 1 50%;
+  flex: 1 1 auto;
   display: grid;
   align-content: center;
-  gap: 6px;
-  padding: 18px 20px 20px;
+  gap: 4px;
+  padding: 10px 14px 12px;
 }
-.practice h3 { margin: 0; font-size: 24px; color: var(--navy); }
-.practice p { margin: 0; color: var(--muted); }
+.practice h3 { margin: 0; font-size: 18px; line-height: 1.2; color: var(--navy); }
+.practice p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.35; }
 .practice-viz { display: none; }
 .practice-viz i {
   position: absolute;
@@ -1293,9 +1297,10 @@ input[type="file"] {
   .practice-art,
   .practice:nth-child(1) .practice-art,
   .practice:nth-child(2) .practice-art {
-    flex: 1 1 50%;
+    flex: 0 0 88px;
     width: 100%;
-    min-height: 160px;
+    height: 88px;
+    min-height: 88px;
     border: 0;
   }
 }
