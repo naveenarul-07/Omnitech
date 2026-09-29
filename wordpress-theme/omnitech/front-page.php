@@ -102,14 +102,25 @@ get_header();
   <div class="container">
     <div class="section-head">
       <?php echo omnitech_mark('#234576', 46); ?>
-      <h2 class="clients-title">Representative Clients That Trust OMNITECH</h2>
+      <h2 class="clients-title">Representative clients that trust OMNITECH</h2>
     </div>
     <div class="marquee">
       <div class="marquee-track">
-        <?php for ($copy = 0; $copy < 2; $copy++) : ?>
-          <ul<?php echo $copy === 1 ? ' aria-hidden="true"' : ''; ?>>
-            <?php foreach ($clients as $client) : ?>
-              <li><?php echo esc_html($client); ?></li>
+        <?php
+        $client_logos = [
+            ['name' => 'SunTrust', 'file' => 'suntrust.png'],
+            ['name' => 'Freddie Mac', 'file' => 'freddie-mac.png'],
+            ['name' => 'The World Bank', 'file' => 'world-bank.png'],
+            ['name' => 'IFC', 'file' => 'ifc.png'],
+            ['name' => 'Merrill', 'file' => 'merrill.png'],
+            ['name' => 'Autodesk', 'file' => 'autodesk.png'],
+        ];
+        for ($copy = 0; $copy < 2; $copy++) : ?>
+          <ul class="client-logos"<?php echo $copy === 1 ? ' aria-hidden="true"' : ''; ?>>
+            <?php foreach ($client_logos as $client) : ?>
+              <li>
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/clients/' . $client['file']); ?>" alt="<?php echo esc_attr($client['name']); ?>">
+              </li>
             <?php endforeach; ?>
           </ul>
         <?php endfor; ?>
