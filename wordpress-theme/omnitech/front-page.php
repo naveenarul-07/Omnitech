@@ -36,6 +36,9 @@ get_header();
     <span class="hero-grid"></span>
   </div>
   <div class="hero-shade"></div>
+  <figure class="hero-side hero-side-left">
+    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/consult-data.png'); ?>" alt="" width="640" height="853">
+  </figure>
   <div class="container hero-layout">
     <div class="hero-copy">
       <p class="eyebrow light hero-kicker"><?php echo esc_html(get_bloginfo('description') ?: 'OMNITECH SYSTEMS - IT ENTERPRISE SOLUTIONS'); ?></p>
@@ -60,6 +63,9 @@ get_header();
       <li><strong>SBA</strong><span>Certified small business</span></li>
     </ul>
   </div>
+  <figure class="hero-side hero-side-right">
+    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/consult-cloud.png'); ?>" alt="" width="640" height="853">
+  </figure>
 </section>
 
 <section class="section services-home" id="services">
