@@ -294,12 +294,14 @@ p { margin: 0 0 1em; }
   animation: none;
 }
 .hero p { font-size: 18px; max-width: 640px; color: var(--navy); }
-.hero-about {
+.hero-about,
+.hero-solutions {
   min-height: 0;
   background: #ffffff;
   animation: none;
 }
-.about-hero {
+.about-hero,
+.solutions-hero {
   position: relative;
   z-index: 1;
   display: grid;
@@ -311,9 +313,16 @@ p { margin: 0 0 1em; }
   padding: 28px 0 32px;
   text-align: left;
 }
-.about-hero h1 { margin: 0; }
-.about-hero-art { margin: 0; }
-.about-hero-art img {
+.about-hero h1,
+.solutions-hero h1 { margin: 0; }
+.solutions-hero h1 {
+  font-size: clamp(36px, 3.6vw, 52px);
+  line-height: 0.98;
+}
+.about-hero-art,
+.solutions-hero-art { margin: 0; }
+.about-hero-art img,
+.solutions-hero-art img {
   display: block;
   width: 100%;
   height: auto;
@@ -979,12 +988,14 @@ input:focus, textarea:focus {
   .service-pill, .service-pill:nth-child(1), .service-pill:nth-child(2) { grid-column: auto; }
   .cta-inner { flex-direction: column; align-items: flex-start; padding: 36px 0; }
   .hero-center { padding: 72px 0; }
-  .about-hero {
+  .about-hero,
+  .solutions-hero {
     grid-template-columns: 1fr;
     text-align: center;
     padding: 24px 0 20px;
   }
-  .about-hero-art img { max-height: 190px; object-position: center; }
+  .about-hero-art img,
+  .solutions-hero-art img { max-height: 190px; object-position: center; }
 }
 @media (max-width: 700px) {
   .pill-grid, .benefit-grid, .contact-grid, .jobs-intro, .footer-meta, .badge-row {
