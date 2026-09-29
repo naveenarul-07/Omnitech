@@ -1256,6 +1256,12 @@ input[type="file"] {
   background: #ffffff;
   border: 2px solid var(--navy);
   color: var(--navy);
+  transition: border-color 0.28s ease;
+}
+.sustain-card:hover {
+  border-color: var(--lime);
+  background: #ffffff;
+  color: var(--navy);
 }
 .sustain-card .eyebrow { margin-bottom: 6px; }
 .sustain-card h2 {
@@ -1266,6 +1272,11 @@ input[type="file"] {
 }
 .sustain-next {
   border-color: var(--navy);
+  background: #ffffff;
+  box-shadow: none;
+}
+.sustain-next:hover {
+  border-color: var(--lime);
   background: #ffffff;
   box-shadow: none;
 }
