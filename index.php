@@ -101,12 +101,13 @@ $practiceArt = [
     <div class="practice-grid">
       <?php foreach (services() as $service): ?>
         <a class="practice practice-<?= e($service['slug']) ?>" href="<?= e(url('solutions') . '#' . $service['slug']) ?>">
-          <img class="practice-bg" src="<?= e(asset('img/practices/' . ($practiceArt[$service['slug']] ?? 'practice-data.png'))) ?>" alt="">
-          <span class="practice-viz" aria-hidden="true">
-            <i></i><i></i><i></i><i></i>
+          <span class="practice-art">
+            <img src="<?= e(asset('img/practices/' . ($practiceArt[$service['slug']] ?? 'practice-data.png'))) ?>" alt="">
           </span>
-          <h3><?= e($service['title']) ?></h3>
-          <p><?= e($blurbs[$service['slug']] ?? '') ?></p>
+          <span class="practice-copy">
+            <h3><?= e($service['title']) ?></h3>
+            <p><?= e($blurbs[$service['slug']] ?? '') ?></p>
+          </span>
         </a>
       <?php endforeach; ?>
     </div>
