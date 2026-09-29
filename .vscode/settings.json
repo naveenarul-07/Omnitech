@@ -1,0 +1,8 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python-envs.pythonProjects": [],
+    "intelephense.environment.includePaths": [
+        "A:/XAMP/htdocs/wordpress"
+    ],
+    "php.validate.executablePath": "A:/XAMP/php/php.exe"
+}

@@ -1,0 +1,41 @@
+/*
+Theme Name: OMNITECH Systems
+Theme URI: https://omnitechsys.com/
+Author: OMNITECH Systems
+Description: WordPress theme adapted from the OMNITECH Systems custom PHP website.
+Version: 1.0.0
+Requires at least: 6.0
+Requires PHP: 7.4
+Text Domain: omnitech
+*/
+
+.editor-styles-wrapper {
+  font-family: "Open Sans", sans-serif;
+}
+
+.wp-block-button__link {
+  border-radius: 4px;
+}
+
+.brand-name {
+  color: #10244d;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.custom-logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.custom-logo {
+  width: auto;
+  max-height: 60px;
+}
+
+.job-row h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 22px;
+}
