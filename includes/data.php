@@ -31,7 +31,7 @@ function services(): array
         [
             'slug' => 'analytics-ai',
             'title' => 'Analytics & AI',
-            'accent' => '#7A45D6',
+            'accent' => '#B4D33D',
             'items' => [
                 'Data Analytics',
                 'Data Visualization',
@@ -41,7 +41,7 @@ function services(): array
         [
             'slug' => 'devops',
             'title' => 'DevOps & Infrastructure',
-            'accent' => '#E23D3D',
+            'accent' => '#B4D33D',
             'items' => [
                 'IaaS, SaaS & PaaS',
                 'Grid Computing',
@@ -52,7 +52,7 @@ function services(): array
         [
             'slug' => 'application-development',
             'title' => 'Application Development & Support',
-            'accent' => '#F5A623',
+            'accent' => '#B4D33D',
             'items' => [
                 'Salesforce',
                 'ServiceNow',
@@ -63,7 +63,7 @@ function services(): array
         [
             'slug' => 'strategic-consulting',
             'title' => 'Strategic Consulting',
-            'accent' => '#2F9BFF',
+            'accent' => '#B4D33D',
             'items' => [
                 'Enterprise Data Strategy',
                 'IT Strategy',
@@ -75,7 +75,7 @@ function services(): array
         [
             'slug' => 'database',
             'title' => 'Database Design & Administration',
-            'accent' => '#E24B3B',
+            'accent' => '#B4D33D',
             'items' => [
                 'AWS RDS, AWS Aurora, PostgreSQL, ORACLE, Sybase, MS-SQL Server Administration & Support',
                 'Database Design & Architecture',

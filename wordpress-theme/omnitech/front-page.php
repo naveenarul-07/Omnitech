@@ -2,11 +2,11 @@
 $services = [
     ['slug' => 'data-management', 'title' => 'Data Management', 'accent' => '#B4D33D'],
     ['slug' => 'clm', 'title' => 'Contract Lifecycle Management (CLM)', 'accent' => '#234576'],
-    ['slug' => 'analytics-ai', 'title' => 'Analytics & AI', 'accent' => '#7A45D6'],
-    ['slug' => 'devops', 'title' => 'DevOps & Infrastructure', 'accent' => '#E23D3D'],
-    ['slug' => 'application-development', 'title' => 'Application Development & Support', 'accent' => '#F5A623'],
-    ['slug' => 'strategic-consulting', 'title' => 'Strategic Consulting', 'accent' => '#2F9BFF'],
-    ['slug' => 'database', 'title' => 'Database Design & Administration', 'accent' => '#E24B3B'],
+    ['slug' => 'analytics-ai', 'title' => 'Analytics & AI', 'accent' => '#B4D33D'],
+    ['slug' => 'devops', 'title' => 'DevOps & Infrastructure', 'accent' => '#B4D33D'],
+    ['slug' => 'application-development', 'title' => 'Application Development & Support', 'accent' => '#B4D33D'],
+    ['slug' => 'strategic-consulting', 'title' => 'Strategic Consulting', 'accent' => '#B4D33D'],
+    ['slug' => 'database', 'title' => 'Database Design & Administration', 'accent' => '#B4D33D'],
 ];
 $clients = [
     'Merrill', 'FIS', 'SunTrust', 'Freddie Mac', 'Booz Allen Hamilton', 'NSF',

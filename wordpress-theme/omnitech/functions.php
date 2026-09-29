@@ -38,7 +38,7 @@ function omnitech_home_body_class(array $classes): array
 }
 add_filter('body_class', 'omnitech_home_body_class');
 
-function omnitech_mark(string $accent = '#b5cf4a', int $size = 42): string
+function omnitech_mark(string $accent = '#B4D33D', int $size = 42): string
 {
     $accent = esc_attr($accent);
     $size = max(16, $size);
