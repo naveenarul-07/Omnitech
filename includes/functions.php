@@ -49,7 +49,7 @@ function csrf_valid(?string $token): bool
     return is_string($token) && isset($_SESSION['csrf']) && hash_equals($_SESSION['csrf'], $token);
 }
 
-function c_mark(string $accent = '#b5cf4a', int $size = 42): string
+function c_mark(string $accent = '#B4D33D', int $size = 42): string
 {
     $accent = e($accent);
     $size = max(16, $size);
