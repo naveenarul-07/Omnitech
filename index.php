@@ -128,14 +128,16 @@ $blurbs = [
   <div class="container">
     <div class="section-head">
       <p class="eyebrow">Who trusts the work</p>
-      <h2 class="clients-title">Representative clients</h2>
+      <h2 class="clients-title">Representative clients that trust OMNITECH</h2>
     </div>
     <div class="marquee">
       <div class="marquee-track">
         <?php for ($copy = 0; $copy < 2; $copy++): ?>
-          <ul<?= $copy === 1 ? ' aria-hidden="true"' : '' ?>>
-            <?php foreach (clients() as $client): ?>
-              <li><?= e($client) ?></li>
+          <ul class="client-logos"<?= $copy === 1 ? ' aria-hidden="true"' : '' ?>>
+            <?php foreach (client_logos() as $client): ?>
+              <li>
+                <img src="<?= e(asset('img/clients/' . $client['file'])) ?>" alt="<?= e($client['name']) ?>">
+              </li>
             <?php endforeach; ?>
           </ul>
         <?php endfor; ?>

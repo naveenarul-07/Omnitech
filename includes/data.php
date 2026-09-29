@@ -95,6 +95,18 @@ function service_by_slug(string $slug): ?array
     return null;
 }
 
+function client_logos(): array
+{
+    return [
+        ['name' => 'SunTrust', 'file' => 'suntrust.png'],
+        ['name' => 'Freddie Mac', 'file' => 'freddie-mac.png'],
+        ['name' => 'The World Bank', 'file' => 'world-bank.png'],
+        ['name' => 'IFC', 'file' => 'ifc.png'],
+        ['name' => 'Merrill', 'file' => 'merrill.png'],
+        ['name' => 'Autodesk', 'file' => 'autodesk.png'],
+    ];
+}
+
 function clients(): array
 {
     return [
