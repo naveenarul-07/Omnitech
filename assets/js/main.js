@@ -46,14 +46,14 @@
     });
   });
 
-  var groups = document.querySelectorAll(".pill-grid, .job-list, .card-grid, .benefit-grid, .badge-row, .alliance-grid, .jobs-intro");
+  var groups = document.querySelectorAll(".pill-grid, .practice-grid, .job-list, .card-grid, .benefit-grid, .badge-row, .alliance-grid, .jobs-intro");
   groups.forEach(function (group) {
     Array.prototype.forEach.call(group.children, function (child, index) {
       child.classList.add("reveal");
       child.style.setProperty("--d", String(Math.min(index, 8)));
     });
   });
-  document.querySelectorAll(".partner-panel, .story-copy, .page-head .container, .apply-card, .contact-card, .section-head, .marquee").forEach(function (node, index) {
+  document.querySelectorAll(".partner-panel, .story-copy, .page-head .container, .apply-card, .contact-card, .section-head, .marquee, .fabric, .sustain-grid").forEach(function (node, index) {
     node.classList.add("reveal");
     node.style.setProperty("--d", String(index % 4));
   });

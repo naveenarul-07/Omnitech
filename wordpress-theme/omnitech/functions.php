@@ -34,7 +34,7 @@ function omnitech_enqueue_assets(): void
 
     wp_enqueue_style(
         'omnitech-fonts',
-        'https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap',
+        'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap',
         [],
         null
     );
