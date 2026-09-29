@@ -46,7 +46,7 @@ $preview = array_slice(services(), 0, 4);
 <section class="section services-home" id="services">
   <div class="container">
     <div class="section-head">
-      <?= c_mark('#7d4de0', 46) ?>
+      <?= c_mark('#234576', 46) ?>
       <p class="eyebrow">what we do</p>
       <h2>Enterprise IT Solutions &amp; Services</h2>
       <p>From data platforms and contract lifecycle management to AI, cloud, and applications, the work is built to stay accountable after go-live.</p>
@@ -76,7 +76,7 @@ $preview = array_slice(services(), 0, 4);
 <section class="section clients-section">
   <div class="container">
     <div class="section-head">
-      <?= c_mark('#7d4de0', 46) ?>
+      <?= c_mark('#234576', 46) ?>
       <h2 class="clients-title">Representative Clients That Trust OMNITECH</h2>
     </div>
     <div class="marquee">
@@ -96,7 +96,7 @@ $preview = array_slice(services(), 0, 4);
 <section class="section careers-teaser">
   <div class="container">
     <div class="section-head">
-      <?= c_mark('#8BC53F', 46) ?>
+      <?= c_mark('#B4D33D', 46) ?>
       <p class="eyebrow">join the team</p>
       <h2>Careers</h2>
       <p class="narrow">If you’re looking for a place that’s more than just a job, a place where you can join a team, look no further.</p>
@@ -105,7 +105,7 @@ $preview = array_slice(services(), 0, 4);
     <div class="job-list">
       <?php foreach (jobs() as $job): ?>
         <article class="job-row">
-          <?= c_mark('#8BC53F', 40) ?>
+          <?= c_mark('#B4D33D', 40) ?>
           <h3><?= e($job['title']) ?></h3>
           <a class="btn btn-outline lime" href="<?= e(url('career/' . $job['slug'])) ?>">Apply Now</a>
         </article>

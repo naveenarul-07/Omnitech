@@ -55,7 +55,7 @@ function c_mark(string $accent = '#b5cf4a', int $size = 42): string
     $size = max(16, $size);
     return <<<SVG
 <svg class="c-mark" width="{$size}" height="{$size}" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-  <path fill="#10244d" d="M48.5 10.2C33.2 9.2 20 19.6 20 32.4 20 46 33.6 55.6 48.8 54.2l-4.1-8.6c-8.4.4-15.2-5.4-15.2-13.2 0-7.6 6.5-13.2 14.8-12.8l4.2-9.4z"/>
+  <path fill="#234576" d="M48.5 10.2C33.2 9.2 20 19.6 20 32.4 20 46 33.6 55.6 48.8 54.2l-4.1-8.6c-8.4.4-15.2-5.4-15.2-13.2 0-7.6 6.5-13.2 14.8-12.8l4.2-9.4z"/>
   <path fill="{$accent}" d="M52 16.4c-9.6-.2-17.2 6.2-17.2 15.8 0 9.2 7.2 15.4 16.6 15.2l-3.2-7.6c-6.2.2-10.4-3.6-10.4-7.6 0-4.2 4.4-7.8 10.6-7.6l3.6-8.2z"/>
 </svg>
 SVG;
@@ -64,20 +64,12 @@ SVG;
 function site_logo(bool $compact = false): string
 {
     $label = e(SITE_NAME);
-    return <<<SVG
+    $src = e(asset('img/logo.png'));
+    return <<<HTML
 <a class="brand" href="/" aria-label="{$label}">
-  <svg class="brand-mark" viewBox="0 0 250 52" role="img" aria-hidden="true">
-    <g class="brand-globe">
-      <circle cx="24" cy="26" r="18" fill="none" stroke="#10244d" stroke-width="2.2"/>
-      <ellipse cx="24" cy="26" rx="8" ry="18" fill="none" stroke="#10244d" stroke-width="1.6"/>
-      <path d="M6 26h36M8.5 18.5h31M8.5 33.5h31" fill="none" stroke="#10244d" stroke-width="1.4"/>
-      <path d="M24 8c4 5 6 11 6 18s-2 13-6 18c-4-5-6-11-6-18s2-13 6-18z" fill="none" stroke="#10244d" stroke-width="1.2"/>
-    </g>
-    <text x="52" y="24" fill="#10244d" font-family="Syne, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="0.5">OMNITECH</text>
-    <text x="52" y="40" fill="#10244d" font-family="Manrope, Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="3.2">SYSTEMS</text>
-  </svg>
+  <img class="brand-mark" src="{$src}" alt="">
 </a>
-SVG;
+HTML;
 }
 
 function flash(string $type, string $message): void

@@ -7,7 +7,7 @@ function services(): array
         [
             'slug' => 'data-management',
             'title' => 'Data Management',
-            'accent' => '#8BC53F',
+            'accent' => '#B4D33D',
             'items' => [
                 'Data Architecture and Engineering',
                 'Data Warehousing',
@@ -18,7 +18,7 @@ function services(): array
         [
             'slug' => 'clm',
             'title' => 'Contract Lifecycle Management (CLM)',
-            'accent' => '#1E3A6E',
+            'accent' => '#234576',
             'items' => [
                 'CLM Vendor (Product) Selection',
                 'CLM Strategy',
