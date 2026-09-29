@@ -1133,14 +1133,18 @@ input[type="file"] {
   border-radius: 22px;
   color: var(--navy);
   background: #ffffff;
-  border: 1px solid rgba(35, 69, 118, 0.14);
+  border: 2px solid var(--navy);
   overflow: hidden;
   isolation: isolate;
   transition: transform 0.28s var(--ease), border-color 0.28s ease;
 }
 .practice:nth-child(1),
 .practice:nth-child(2) { grid-column: span 6; min-height: 260px; }
-.practice:hover { transform: translateY(-6px); border-color: var(--lime); color: var(--navy); }
+.practice:hover {
+  transform: translateY(-6px);
+  border-color: var(--lime);
+  color: var(--navy);
+}
 .practice-bg {
   position: absolute;
   inset: -12%;
