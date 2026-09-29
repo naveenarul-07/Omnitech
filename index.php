@@ -27,6 +27,15 @@ $blurbs = [
     'strategic-consulting' => 'Data strategy, re-platforming, and legacy database migrations.',
     'database' => 'Design, administration, and tuning across enterprise databases.',
 ];
+$practiceArt = [
+    'data-management' => 'practice-data.png',
+    'clm' => 'practice-clm.png',
+    'analytics-ai' => 'practice-analytics.png',
+    'devops' => 'practice-devops.png',
+    'application-development' => 'practice-apps.png',
+    'strategic-consulting' => 'practice-strategy.png',
+    'database' => 'practice-database.png',
+];
 ?>
 <section class="hero hero-home">
   <div class="hero-stage" aria-hidden="true">
@@ -98,6 +107,7 @@ $blurbs = [
     <div class="practice-grid">
       <?php foreach (services() as $service): ?>
         <a class="practice practice-<?= e($service['slug']) ?>" href="<?= e(url('solutions') . '#' . $service['slug']) ?>">
+          <img class="practice-bg" src="<?= e(asset('img/practices/' . ($practiceArt[$service['slug']] ?? 'practice-data.png'))) ?>" alt="">
           <span class="practice-viz" aria-hidden="true">
             <i></i><i></i><i></i><i></i>
           </span>
