@@ -9,10 +9,14 @@ render_header(
 );
 ?>
 <section class="hero hero-about">
-  <div class="hero-shade"></div>
-  <div class="container hero-center">
-    <p class="eyebrow light"><?= e(SITE_TAGLINE) ?></p>
-    <h1>About US</h1>
+  <div class="container about-hero">
+    <div class="about-hero-copy">
+      <p class="eyebrow light"><?= e(SITE_TAGLINE) ?></p>
+      <h1>About US</h1>
+    </div>
+    <figure class="about-hero-art">
+      <img src="<?= e(asset('img/about-hero.png')) ?>" alt="The OMNITECH team in the Washington DC area, delivering systems for companies and government">
+    </figure>
   </div>
 </section>
 
