@@ -61,14 +61,15 @@ render_header(
 );
 ?>
 <section class="hero hero-contact">
+  <video class="hero-video hero-banner-video" autoplay muted loop playsinline poster="<?= e(asset('img/contact-hero-poster.jpg')) ?>" aria-hidden="true">
+    <source src="<?= e(asset('video/contact-hero.mp4')) ?>" type="video/mp4">
+  </video>
+  <div class="hero-banner-fade" aria-hidden="true"></div>
   <div class="container contact-hero">
     <div class="contact-hero-copy">
       <p class="eyebrow light"><?= e(SITE_TAGLINE) ?></p>
       <h1>Contact Us</h1>
     </div>
-    <figure class="contact-hero-art">
-      <img src="<?= e(asset('img/contact-hero.png')) ?>" alt="The Vienna office, with a map pin, email, phone, and a message">
-    </figure>
   </div>
 </section>
 

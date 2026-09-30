@@ -2,38 +2,41 @@
 <?php while (have_posts()) : the_post(); ?>
   <?php if (is_page('about')) : ?>
     <section class="hero hero-about">
+      <video class="hero-video hero-banner-video" autoplay muted loop playsinline poster="<?php echo esc_url(get_template_directory_uri() . '/assets/img/about-hero-poster.jpg'); ?>" aria-hidden="true">
+        <source src="<?php echo esc_url(get_template_directory_uri() . '/assets/video/about-hero.mp4'); ?>" type="video/mp4">
+      </video>
+      <div class="hero-banner-fade" aria-hidden="true"></div>
       <div class="container about-hero">
         <div class="about-hero-copy">
           <p class="eyebrow light"><?php echo esc_html(get_bloginfo('description')); ?></p>
           <h1><?php the_title(); ?></h1>
         </div>
-        <figure class="about-hero-art">
-          <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/about-hero.png'); ?>" alt="The OMNITECH team in the Washington DC area, delivering systems for companies and government">
-        </figure>
       </div>
     </section>
   <?php elseif (is_page('solutions')) : ?>
     <section class="hero hero-solutions">
+      <video class="hero-video hero-banner-video" autoplay muted loop playsinline poster="<?php echo esc_url(get_template_directory_uri() . '/assets/img/solutions-hero-poster.jpg'); ?>" aria-hidden="true">
+        <source src="<?php echo esc_url(get_template_directory_uri() . '/assets/video/solutions-hero.mp4'); ?>" type="video/mp4">
+      </video>
+      <div class="hero-banner-fade" aria-hidden="true"></div>
       <div class="container solutions-hero">
         <div class="solutions-hero-copy">
           <p class="eyebrow light"><?php echo esc_html(get_bloginfo('description')); ?></p>
           <h1><?php the_title(); ?></h1>
         </div>
-        <figure class="solutions-hero-art">
-          <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/solutions-hero.png'); ?>" alt="Data, contracts, analytics, cloud, applications, and databases connected as one system">
-        </figure>
       </div>
     </section>
   <?php elseif (is_page('contact')) : ?>
     <section class="hero hero-contact">
+      <video class="hero-video hero-banner-video" autoplay muted loop playsinline poster="<?php echo esc_url(get_template_directory_uri() . '/assets/img/contact-hero-poster.jpg'); ?>" aria-hidden="true">
+        <source src="<?php echo esc_url(get_template_directory_uri() . '/assets/video/contact-hero.mp4'); ?>" type="video/mp4">
+      </video>
+      <div class="hero-banner-fade" aria-hidden="true"></div>
       <div class="container contact-hero">
         <div class="contact-hero-copy">
           <p class="eyebrow light"><?php echo esc_html(get_bloginfo('description')); ?></p>
           <h1><?php the_title(); ?></h1>
         </div>
-        <figure class="contact-hero-art">
-          <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/contact-hero.png'); ?>" alt="The Vienna office, with a map pin, email, phone, and a message">
-        </figure>
       </div>
     </section>
   <?php else : ?>

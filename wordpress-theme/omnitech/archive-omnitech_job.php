@@ -1,14 +1,15 @@
 <?php get_header(); ?>
 <section class="hero hero-careers">
+  <video class="hero-video hero-banner-video" autoplay muted loop playsinline poster="<?php echo esc_url(get_template_directory_uri() . '/assets/img/careers-hero-poster.jpg'); ?>" aria-hidden="true">
+    <source src="<?php echo esc_url(get_template_directory_uri() . '/assets/video/careers-hero.mp4'); ?>" type="video/mp4">
+  </video>
+  <div class="hero-banner-fade" aria-hidden="true"></div>
   <div class="container careers-hero">
     <div class="careers-hero-copy">
       <p class="eyebrow light"><?php echo esc_html(get_bloginfo('description')); ?></p>
       <h1><?php esc_html_e('Find a Career', 'omnitech'); ?></h1>
       <p class="hero-sub"><?php esc_html_e('Start your career with OMNITECH.', 'omnitech'); ?></p>
     </div>
-    <figure class="careers-hero-art">
-      <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/careers-hero.png'); ?>" alt="People joining OMNITECH, with health coverage, paid time off, and open technology roles">
-    </figure>
   </div>
 </section>
 <section class="section jobs-open">

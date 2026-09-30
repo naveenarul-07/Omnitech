@@ -6,6 +6,13 @@
 
   document.documentElement.classList.add("js");
 
+  document.querySelectorAll(".hero-video").forEach(function (video) {
+    if (reduce) {
+      video.removeAttribute("autoplay");
+      video.pause();
+    }
+  });
+
   function onScroll() {
     if (!header) return;
     header.classList.toggle("is-stuck", window.scrollY > 8);
@@ -31,6 +38,7 @@
   }
 
   document.querySelectorAll(".hero").forEach(function (hero) {
+    if (hero.querySelector(".hero-banner-video")) return;
     if (!hero.querySelector(".hero-stage")) {
       var stage = document.createElement("div");
       stage.className = "hero-stage";
