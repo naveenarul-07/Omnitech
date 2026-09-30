@@ -124,10 +124,13 @@ get_header();
     <div class="practice-grid">
       <?php foreach ($services as $service) : ?>
         <a class="practice practice-<?php echo esc_attr($service['slug']); ?>" href="<?php echo esc_url($solutions_url . '#' . $service['slug']); ?>">
-          <img class="practice-bg" src="<?php echo esc_url($theme_assets . 'practices/' . ($practice_art[$service['slug']] ?? 'practice-data.png')); ?>" alt="">
-          <span class="practice-viz" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-          <h3><?php echo esc_html($service['title']); ?></h3>
-          <p><?php echo esc_html($blurbs[$service['slug']] ?? ''); ?></p>
+          <span class="practice-art">
+            <img src="<?php echo esc_url($theme_assets . 'practices/' . ($practice_art[$service['slug']] ?? 'practice-data.png')); ?>" alt="">
+          </span>
+          <span class="practice-copy">
+            <h3><?php echo esc_html($service['title']); ?></h3>
+            <p><?php echo esc_html($blurbs[$service['slug']] ?? ''); ?></p>
+          </span>
         </a>
       <?php endforeach; ?>
     </div>

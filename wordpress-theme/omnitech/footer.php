@@ -15,7 +15,7 @@
       wp_nav_menu([
           'theme_location' => 'footer',
           'container' => false,
-          'fallback_cb' => 'wp_page_menu',
+          'fallback_cb' => 'omnitech_footer_nav_fallback',
           'items_wrap' => '<ul>%3$s</ul>',
       ]);
       ?>
@@ -27,10 +27,7 @@
     <?php if ($privacy_page) : ?>
       <a href="<?php echo esc_url(get_permalink($privacy_page)); ?>"><?php echo esc_html(get_the_title($privacy_page)); ?></a>
     <?php endif; ?>
-    <?php $contact_email = get_theme_mod('omnitech_contact_email', 'contact@omnitechsys.com'); ?>
-    <?php if ($contact_email !== '') : ?>
-      <a href="mailto:<?php echo esc_attr($contact_email); ?>"><?php echo esc_html($contact_email); ?></a>
-    <?php endif; ?>
+    <a class="linkedin" href="https://www.linkedin.com/company/omnitech-systems/" target="_blank" rel="noopener noreferrer" aria-label="OMNITECH Systems on LinkedIn">in</a>
   </div>
 </footer>
 <?php wp_footer(); ?>

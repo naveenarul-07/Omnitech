@@ -32,7 +32,7 @@
       wp_nav_menu([
           'theme_location' => 'primary',
           'container' => false,
-          'fallback_cb' => 'wp_page_menu',
+          'fallback_cb' => 'omnitech_primary_nav_fallback',
           'menu_class' => '',
         'items_wrap' => $menu_items_wrap . '</ul>',
       ]);
