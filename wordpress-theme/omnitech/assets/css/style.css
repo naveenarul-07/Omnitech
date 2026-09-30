@@ -657,8 +657,9 @@ p { margin: 0 0 1em; }
 .story-copy { position: relative; max-width: 860px; }
 .about-story p { color: var(--navy); font-size: 18px; }
 .story-close { margin-top: 28px; font-weight: 700; }
-.badges { background: transparent; padding: 48px 0 10px; }
-.badge-row { display: flex; justify-content: center; gap: 22px; align-items: stretch; text-align: center; }
+.badges { background: transparent; padding: 48px 0 28px; }
+.badge-row { display: flex; justify-content: center; gap: 48px; align-items: center; text-align: center; }
+.cert-badge { display: block; height: 168px; width: auto; max-width: 280px; object-fit: contain; }
 .badge {
   color: var(--ink);
   background: #fff;
@@ -1037,7 +1038,8 @@ input:focus, textarea:focus {
     grid-template-columns: 1fr;
   }
   .pill-grid { display: grid; }
-  .badge-row { display: grid; justify-items: center; gap: 16px; }
+  .badge-row { display: grid; justify-items: center; gap: 28px; }
+  .cert-badge { height: 140px; }
   .job-row { grid-template-columns: 1fr; justify-items: start; }
   .contact-card, .partner-panel { padding: 24px 18px; }
   .hero-home, .hero-layout { min-height: 0; }
