@@ -33,14 +33,8 @@ render_header(
 
 <section class="badges">
   <div class="container badge-row">
-    <article class="badge">
-      <p class="badge-mark">SBA</p>
-      <p>Certified Small<br>Disadvantaged<br>Business</p>
-    </article>
-    <article class="badge badge-gsa">
-      <p class="badge-mark">GSA</p>
-      <p>IT Schedule<br><strong>70</strong></p>
-    </article>
+    <img class="cert-badge" src="<?= e(asset('img/sba-badge.png')) ?>" alt="SBA Certified Small Disadvantaged Business">
+    <img class="cert-badge" src="<?= e(asset('img/gsa-badge.png')) ?>" alt="GSA IT Schedule 70">
   </div>
 </section>
 <?php render_footer(); ?>

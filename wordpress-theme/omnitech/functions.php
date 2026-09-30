@@ -230,7 +230,7 @@ function omnitech_seed_site_content(): void
         'About Us',
         'about',
         'OMNITECH Systems is a minority-owned software solutions and services firm serving commercial and government clients since 1999.',
-        '<section class="about-story"><div class="container story-copy"><p class="eyebrow lime">Our History and Purpose</p><p>OMNITECH Systems is a software solutions and services provider serving U.S. and international firms and federal and state governments.</p><p>Headquartered in the Washington, DC metropolitan area, OMNITECH was established in 1999 as a minority-owned small business by IT professionals with diverse software development and IT consulting experience.</p><p>Our growth is rooted in a focus on customer needs and a commitment to delivering high-quality services.</p><p class="story-close">Reach us today for an assessment of your business needs.</p></div></section><section class="badges"><div class="container badge-row"><article class="badge"><p class="badge-mark">SBA</p><p>Certified Small<br>Disadvantaged Business</p></article><article class="badge badge-gsa"><p class="badge-mark">GSA</p><p>IT Schedule<br><strong>70</strong></p></article></div></section>'
+        '<section class="about-story"><div class="container story-copy"><p class="eyebrow lime">Our History and Purpose</p><p>OMNITECH Systems is a software solutions and services provider serving U.S. and international firms and federal and state governments.</p><p>Headquartered in the Washington, DC metropolitan area, OMNITECH was established in 1999 as a minority-owned small business by IT professionals with diverse software development and IT consulting experience.</p><p>Our growth is rooted in a focus on customer needs and a commitment to delivering high-quality services.</p><p class="story-close">Reach us today for an assessment of your business needs.</p></div></section>' . '<section class="badges"><div class="container badge-row"><img class="cert-badge" src="' . esc_url(get_template_directory_uri()) . '/assets/img/sba-badge.png" alt="SBA Certified Small Disadvantaged Business"><img class="cert-badge" src="' . esc_url(get_template_directory_uri()) . '/assets/img/gsa-badge.png" alt="GSA IT Schedule 70"></div></section>'
     );
 
     $solutions_id = omnitech_seed_page(
@@ -365,3 +365,20 @@ function omnitech_solutions_alliance_logos(string $content): string
     return $count ? $replaced : $content;
 }
 add_filter('the_content', 'omnitech_solutions_alliance_logos');
+
+function omnitech_about_cert_badges(string $content): string
+{
+    if (!is_page('about') || !str_contains($content, 'class="badge-mark"')) {
+        return $content;
+    }
+
+    $base = get_template_directory_uri();
+    $markup = '<section class="badges"><div class="container badge-row">'
+        . '<img class="cert-badge" src="' . esc_url($base . '/assets/img/sba-badge.png') . '" alt="SBA Certified Small Disadvantaged Business">'
+        . '<img class="cert-badge" src="' . esc_url($base . '/assets/img/gsa-badge.png') . '" alt="GSA IT Schedule 70">'
+        . '</div></section>';
+    $replaced = preg_replace('/<section class="badges">.*?<\/section>/s', $markup, $content, 1, $count);
+
+    return $count ? $replaced : $content;
+}
+add_filter('the_content', 'omnitech_about_cert_badges');
