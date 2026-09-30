@@ -489,6 +489,7 @@ p { margin: 0 0 1em; }
 .btn-navy { background: var(--navy); color: #fff; }
 .btn-navy:hover { background: var(--navy-deep); }
 .btn-block { width: 100%; }
+.contact-form-wrap .btn-block { margin-top: 20px; }
 .text-link { font-weight: 800; }
 .text-link span { display: inline-block; transition: transform 0.2s ease; }
 .text-link:hover span { transform: translateX(4px); }
@@ -708,7 +709,7 @@ p { margin: 0 0 1em; }
 .solution-card li { position: relative; padding-left: 22px; margin: 8px 0; }
 .solution-card li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 8px; height: 8px; border-radius: 50%; background: var(--lime-deep); }
 
-.alliances { padding-top: 10px; }
+.alliances { padding-top: 72px; padding-bottom: 120px; }
 .contact-card {
   background: rgba(255, 255, 255, 0.88);
   border: 1px solid rgba(255, 255, 255, 0.8);
