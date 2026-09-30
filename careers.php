@@ -21,7 +21,7 @@ $benefits = [
       <p class="hero-sub">Start your career with OMNITECH.</p>
     </div>
     <figure class="careers-hero-art">
-      <video class="hero-video" autoplay muted loop playsinline poster="<?= e(asset('img/careers-hero.png')) ?>" aria-label="People joining OMNITECH, with health coverage, paid time off, and open technology roles">
+      <video class="hero-video" autoplay muted loop playsinline poster="<?= e(asset('img/careers-hero-poster.jpg')) ?>" aria-label="People joining OMNITECH, with health coverage, paid time off, and open technology roles">
         <source src="<?= e(asset('video/careers-hero.mp4')) ?>" type="video/mp4">
       </video>
     </figure>

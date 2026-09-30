@@ -8,7 +8,7 @@
           <h1><?php the_title(); ?></h1>
         </div>
         <figure class="about-hero-art">
-          <video class="hero-video" autoplay muted loop playsinline poster="<?php echo esc_url(get_template_directory_uri() . '/assets/img/about-hero.png'); ?>" aria-label="The OMNITECH team in the Washington DC area, delivering systems for companies and government">
+          <video class="hero-video" autoplay muted loop playsinline poster="<?php echo esc_url(get_template_directory_uri() . '/assets/img/about-hero-poster.jpg'); ?>" aria-label="The OMNITECH team in the Washington DC area, delivering systems for companies and government">
             <source src="<?php echo esc_url(get_template_directory_uri() . '/assets/video/about-hero.mp4'); ?>" type="video/mp4">
           </video>
         </figure>
@@ -22,7 +22,7 @@
           <h1><?php the_title(); ?></h1>
         </div>
         <figure class="solutions-hero-art">
-          <video class="hero-video" autoplay muted loop playsinline poster="<?php echo esc_url(get_template_directory_uri() . '/assets/img/solutions-hero.png'); ?>" aria-label="Data, contracts, analytics, cloud, applications, and databases connected as one system">
+          <video class="hero-video" autoplay muted loop playsinline poster="<?php echo esc_url(get_template_directory_uri() . '/assets/img/solutions-hero-poster.jpg'); ?>" aria-label="Data, contracts, analytics, cloud, applications, and databases connected as one system">
             <source src="<?php echo esc_url(get_template_directory_uri() . '/assets/video/solutions-hero.mp4'); ?>" type="video/mp4">
           </video>
         </figure>
@@ -36,7 +36,7 @@
           <h1><?php the_title(); ?></h1>
         </div>
         <figure class="contact-hero-art">
-          <video class="hero-video" autoplay muted loop playsinline poster="<?php echo esc_url(get_template_directory_uri() . '/assets/img/contact-hero.png'); ?>" aria-label="The Vienna office, with a map pin, email, phone, and a message">
+          <video class="hero-video" autoplay muted loop playsinline poster="<?php echo esc_url(get_template_directory_uri() . '/assets/img/contact-hero-poster.jpg'); ?>" aria-label="The Vienna office, with a map pin, email, phone, and a message">
             <source src="<?php echo esc_url(get_template_directory_uri() . '/assets/video/contact-hero.mp4'); ?>" type="video/mp4">
           </video>
         </figure>
