@@ -326,3 +326,42 @@ function omnitech_maybe_seed_site_content(): void
     }
 }
 add_action('admin_init', 'omnitech_maybe_seed_site_content');
+
+function omnitech_alliance_logo_markup(): string
+{
+    $logos = [
+        ['Autodesk', 'autodesk.png'],
+        ['ServiceNow', 'servicenow.png'],
+        ['VMware', 'vmware.png'],
+        ['MSDN', 'msdn.png'],
+        ['Salesforce', 'salesforce.png'],
+        ['SAP', 'sap.png'],
+        ['Microsoft Azure', 'azure.png'],
+        ['Amazon Web Services', 'aws.png'],
+    ];
+    $items = '';
+    foreach ($logos as [$name, $file]) {
+        $items .= '<li><img src="' . esc_url(get_template_directory_uri() . '/assets/img/alliances/' . $file) . '" alt="' . esc_attr($name) . '"></li>';
+    }
+    $list = '<ul class="alliance-logos">' . $items . '</ul>';
+    $hidden = '<ul class="alliance-logos" aria-hidden="true">' . $items . '</ul>';
+
+    return '<div class="marquee"><div class="marquee-track">' . $list . $hidden . '</div></div>';
+}
+
+function omnitech_solutions_alliance_logos(string $content): string
+{
+    if (!is_page('solutions')) {
+        return $content;
+    }
+    $replaced = preg_replace(
+        '/<ul class="alliance-grid">.*?<\/ul>/s',
+        omnitech_alliance_logo_markup(),
+        $content,
+        1,
+        $count
+    );
+
+    return $count ? $replaced : $content;
+}
+add_filter('the_content', 'omnitech_solutions_alliance_logos');

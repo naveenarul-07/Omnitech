@@ -1062,7 +1062,8 @@ input:focus, textarea:focus {
   color: var(--navy);
   border-color: rgba(35, 69, 118, 0.16);
 }
-.marquee-track .client-logos li {
+.marquee-track .client-logos li,
+.marquee-track .alliance-logos li {
   background: transparent;
   border: 0;
   box-shadow: none;
@@ -1070,6 +1071,14 @@ input:focus, textarea:focus {
   height: auto;
   padding: 4px 28px;
   border-radius: 0;
+}
+.alliance-logos { align-items: center; }
+.alliance-logos img {
+  display: block;
+  height: 58px;
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
 }
 label,
 .interest,

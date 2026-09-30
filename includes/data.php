@@ -144,6 +144,20 @@ function alliances(): array
     ];
 }
 
+function alliance_logos(): array
+{
+    return [
+        ['name' => 'Autodesk', 'file' => 'autodesk.png'],
+        ['name' => 'ServiceNow', 'file' => 'servicenow.png'],
+        ['name' => 'VMware', 'file' => 'vmware.png'],
+        ['name' => 'MSDN', 'file' => 'msdn.png'],
+        ['name' => 'Salesforce', 'file' => 'salesforce.png'],
+        ['name' => 'SAP', 'file' => 'sap.png'],
+        ['name' => 'Microsoft Azure', 'file' => 'azure.png'],
+        ['name' => 'Amazon Web Services', 'file' => 'aws.png'],
+    ];
+}
+
 function jobs(): array
 {
     return [

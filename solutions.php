@@ -44,11 +44,19 @@ render_header(
 <section class="section alliances">
   <div class="container center">
     <h2>Key Technology Expertise and Industry Alliances</h2>
-    <ul class="alliance-grid">
-      <?php foreach (alliances() as $name): ?>
-        <li><?= e($name) ?></li>
-      <?php endforeach; ?>
-    </ul>
+  </div>
+  <div class="marquee">
+    <div class="marquee-track">
+      <?php for ($copy = 0; $copy < 2; $copy++): ?>
+        <ul class="alliance-logos"<?= $copy === 1 ? ' aria-hidden="true"' : '' ?>>
+          <?php foreach (alliance_logos() as $logo): ?>
+            <li>
+              <img src="<?= e(asset('img/alliances/' . $logo['file'])) ?>" alt="<?= e($logo['name']) ?>">
+            </li>
+          <?php endforeach; ?>
+        </ul>
+      <?php endfor; ?>
+    </div>
   </div>
 </section>
 <?php render_footer(); ?>
