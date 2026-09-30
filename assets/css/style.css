@@ -1043,6 +1043,18 @@ input:focus, textarea:focus {
 .badge-mark { color: var(--lime); }
 .solution-card ul,
 .solution-card li { color: var(--muted); }
+.solution-card {
+  border: 2px solid var(--navy);
+  background: #ffffff;
+  box-shadow: none;
+}
+.solution-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--lime);
+  background: #ffffff;
+  color: var(--navy);
+  box-shadow: none;
+}
 .marquee-track li,
 .alliance-grid li,
 .client-grid li {
