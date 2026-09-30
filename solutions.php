@@ -9,16 +9,15 @@ render_header(
 );
 ?>
 <section class="hero hero-solutions">
+  <video class="hero-video hero-banner-video" autoplay muted loop playsinline poster="<?= e(asset('img/solutions-hero-poster.jpg')) ?>" aria-hidden="true">
+    <source src="<?= e(asset('video/solutions-hero.mp4')) ?>" type="video/mp4">
+  </video>
+  <div class="hero-banner-fade" aria-hidden="true"></div>
   <div class="container solutions-hero">
     <div class="solutions-hero-copy">
       <p class="eyebrow light"><?= e(SITE_TAGLINE) ?></p>
       <h1>Enterprise IT<br>Solutions &amp; Services</h1>
     </div>
-    <figure class="solutions-hero-art">
-      <video class="hero-video" autoplay muted loop playsinline poster="<?= e(asset('img/solutions-hero-poster.jpg')) ?>" aria-label="Data, contracts, analytics, cloud, applications, and databases connected as one system">
-        <source src="<?= e(asset('video/solutions-hero.mp4')) ?>" type="video/mp4">
-      </video>
-    </figure>
   </div>
 </section>
 

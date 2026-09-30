@@ -298,25 +298,52 @@ p { margin: 0 0 1em; }
 .hero-solutions,
 .hero-contact,
 .hero-careers {
-  min-height: 0;
-  background: #ffffff;
+  min-height: 420px;
+  background: #1a3560;
   animation: none;
+  align-items: stretch;
+}
+.hero-about .hero-stage,
+.hero-solutions .hero-stage,
+.hero-contact .hero-stage,
+.hero-careers .hero-stage { display: none; }
+.hero-banner-video {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+  background: #1a3560;
+}
+.hero-careers .hero-banner-video { object-position: 72% 42%; }
+.hero-banner-fade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.84) 0%, rgba(255, 255, 255, 0.62) 42%, rgba(255, 255, 255, 0.28) 100%);
 }
 .about-hero,
 .solutions-hero,
 .contact-hero,
 .careers-hero {
   position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: minmax(220px, 0.72fr) minmax(0, 1.28fr);
+  z-index: 2;
+  display: flex;
   align-items: center;
-  gap: 20px 36px;
   width: min(var(--max), calc(100% - 40px));
+  min-height: 420px;
   margin: 0 auto;
-  padding: 28px 0 32px;
+  padding: 56px 0;
   text-align: left;
 }
+.about-hero-copy,
+.solutions-hero-copy,
+.contact-hero-copy,
+.careers-hero-copy { max-width: 640px; }
 .about-hero h1,
 .solutions-hero h1,
 .contact-hero h1,
@@ -325,34 +352,6 @@ p { margin: 0 0 1em; }
 .solutions-hero h1 {
   font-size: clamp(36px, 3.6vw, 52px);
   line-height: 0.98;
-}
-.about-hero-art,
-.solutions-hero-art,
-.contact-hero-art,
-.careers-hero-art { margin: 0; }
-.about-hero-art img,
-.solutions-hero-art img,
-.contact-hero-art img,
-.careers-hero-art img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: 250px;
-  object-fit: contain;
-  object-position: center right;
-}
-.about-hero-art video,
-.solutions-hero-art video,
-.contact-hero-art video,
-.careers-hero-art video {
-  display: block;
-  width: 100%;
-  height: 280px;
-  max-height: 280px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 18px;
-  background: #234576;
 }
 .hero-center { text-align: center; padding: 92px 0 100px; margin: 0 auto; }
 .hero-center h1, .hero-center p { margin-left: auto; margin-right: auto; }
@@ -1007,27 +1006,29 @@ input:focus, textarea:focus {
   .service-pill, .service-pill:nth-child(1), .service-pill:nth-child(2) { grid-column: auto; }
   .cta-inner { flex-direction: column; align-items: flex-start; padding: 36px 0; }
   .hero-center { padding: 72px 0; }
+  .hero-about,
+  .hero-solutions,
+  .hero-contact,
+  .hero-careers,
+  .about-hero,
+  .solutions-hero,
+  .contact-hero,
+  .careers-hero { min-height: 340px; }
+  .hero-banner-fade {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.78) 0%, rgba(255, 255, 255, 0.58) 58%, rgba(255, 255, 255, 0.36) 100%);
+  }
   .about-hero,
   .solutions-hero,
   .contact-hero,
   .careers-hero {
-    grid-template-columns: 1fr;
+    justify-content: center;
     text-align: center;
-    padding: 24px 0 20px;
+    padding: 48px 0;
   }
-  .about-hero-art img,
-  .solutions-hero-art img,
-  .contact-hero-art img,
-  .careers-hero-art img { max-height: 190px; object-position: center; }
-  .about-hero-art video,
-  .solutions-hero-art video,
-  .contact-hero-art video,
-  .careers-hero-art video {
-    height: 200px;
-    max-height: 200px;
-    object-fit: cover;
-    object-position: center;
-  }
+  .about-hero-copy,
+  .solutions-hero-copy,
+  .contact-hero-copy,
+  .careers-hero-copy { margin-inline: auto; }
   .careers-hero .hero-sub { margin-left: auto; margin-right: auto; }
 }
 @media (max-width: 700px) {

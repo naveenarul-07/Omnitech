@@ -14,17 +14,16 @@ $benefits = [
 ];
 ?>
 <section class="hero hero-careers">
+  <video class="hero-video hero-banner-video" autoplay muted loop playsinline poster="<?= e(asset('img/careers-hero-poster.jpg')) ?>" aria-hidden="true">
+    <source src="<?= e(asset('video/careers-hero.mp4')) ?>" type="video/mp4">
+  </video>
+  <div class="hero-banner-fade" aria-hidden="true"></div>
   <div class="container careers-hero">
     <div class="careers-hero-copy">
       <p class="eyebrow light"><?= e(SITE_TAGLINE) ?></p>
       <h1>Find a Career</h1>
       <p class="hero-sub">Start your career with OMNITECH.</p>
     </div>
-    <figure class="careers-hero-art">
-      <video class="hero-video" autoplay muted loop playsinline poster="<?= e(asset('img/careers-hero-poster.jpg')) ?>" aria-label="People joining OMNITECH, with health coverage, paid time off, and open technology roles">
-        <source src="<?= e(asset('video/careers-hero.mp4')) ?>" type="video/mp4">
-      </video>
-    </figure>
   </div>
 </section>
 

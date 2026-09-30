@@ -9,16 +9,15 @@ render_header(
 );
 ?>
 <section class="hero hero-about">
+  <video class="hero-video hero-banner-video" autoplay muted loop playsinline poster="<?= e(asset('img/about-hero-poster.jpg')) ?>" aria-hidden="true">
+    <source src="<?= e(asset('video/about-hero.mp4')) ?>" type="video/mp4">
+  </video>
+  <div class="hero-banner-fade" aria-hidden="true"></div>
   <div class="container about-hero">
     <div class="about-hero-copy">
       <p class="eyebrow light"><?= e(SITE_TAGLINE) ?></p>
       <h1>About US</h1>
     </div>
-    <figure class="about-hero-art">
-      <video class="hero-video" autoplay muted loop playsinline poster="<?= e(asset('img/about-hero-poster.jpg')) ?>" aria-label="The OMNITECH team in the Washington DC area, delivering systems for companies and government">
-        <source src="<?= e(asset('video/about-hero.mp4')) ?>" type="video/mp4">
-      </video>
-    </figure>
   </div>
 </section>
 

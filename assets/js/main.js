@@ -38,6 +38,7 @@
   }
 
   document.querySelectorAll(".hero").forEach(function (hero) {
+    if (hero.querySelector(".hero-banner-video")) return;
     if (!hero.querySelector(".hero-stage")) {
       var stage = document.createElement("div");
       stage.className = "hero-stage";
