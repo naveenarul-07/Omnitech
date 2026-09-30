@@ -6,6 +6,13 @@
 
   document.documentElement.classList.add("js");
 
+  document.querySelectorAll(".hero-video").forEach(function (video) {
+    if (reduce) {
+      video.removeAttribute("autoplay");
+      video.pause();
+    }
+  });
+
   function onScroll() {
     if (!header) return;
     header.classList.toggle("is-stuck", window.scrollY > 8);

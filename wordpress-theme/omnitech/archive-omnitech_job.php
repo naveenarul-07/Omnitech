@@ -7,7 +7,9 @@
       <p class="hero-sub"><?php esc_html_e('Start your career with OMNITECH.', 'omnitech'); ?></p>
     </div>
     <figure class="careers-hero-art">
-      <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/careers-hero.png'); ?>" alt="People joining OMNITECH, with health coverage, paid time off, and open technology roles">
+      <video class="hero-video" autoplay muted loop playsinline poster="<?php echo esc_url(get_template_directory_uri() . '/assets/img/careers-hero.png'); ?>" aria-label="People joining OMNITECH, with health coverage, paid time off, and open technology roles">
+        <source src="<?php echo esc_url(get_template_directory_uri() . '/assets/video/careers-hero.mp4'); ?>" type="video/mp4">
+      </video>
     </figure>
   </div>
 </section>

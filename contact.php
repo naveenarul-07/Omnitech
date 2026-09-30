@@ -67,7 +67,9 @@ render_header(
       <h1>Contact Us</h1>
     </div>
     <figure class="contact-hero-art">
-      <img src="<?= e(asset('img/contact-hero.png')) ?>" alt="The Vienna office, with a map pin, email, phone, and a message">
+      <video class="hero-video" autoplay muted loop playsinline poster="<?= e(asset('img/contact-hero.png')) ?>" aria-label="The Vienna office, with a map pin, email, phone, and a message">
+        <source src="<?= e(asset('video/contact-hero.mp4')) ?>" type="video/mp4">
+      </video>
     </figure>
   </div>
 </section>

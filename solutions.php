@@ -15,7 +15,9 @@ render_header(
       <h1>Enterprise IT<br>Solutions &amp; Services</h1>
     </div>
     <figure class="solutions-hero-art">
-      <img src="<?= e(asset('img/solutions-hero.png')) ?>" alt="Data, contracts, analytics, cloud, applications, and databases connected as one system">
+      <video class="hero-video" autoplay muted loop playsinline poster="<?= e(asset('img/solutions-hero.png')) ?>" aria-label="Data, contracts, analytics, cloud, applications, and databases connected as one system">
+        <source src="<?= e(asset('video/solutions-hero.mp4')) ?>" type="video/mp4">
+      </video>
     </figure>
   </div>
 </section>

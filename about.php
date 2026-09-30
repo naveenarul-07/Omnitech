@@ -15,7 +15,9 @@ render_header(
       <h1>About US</h1>
     </div>
     <figure class="about-hero-art">
-      <img src="<?= e(asset('img/about-hero.png')) ?>" alt="The OMNITECH team in the Washington DC area, delivering systems for companies and government">
+      <video class="hero-video" autoplay muted loop playsinline poster="<?= e(asset('img/about-hero.png')) ?>" aria-label="The OMNITECH team in the Washington DC area, delivering systems for companies and government">
+        <source src="<?= e(asset('video/about-hero.mp4')) ?>" type="video/mp4">
+      </video>
     </figure>
   </div>
 </section>

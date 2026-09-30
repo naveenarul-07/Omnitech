@@ -333,7 +333,11 @@ p { margin: 0 0 1em; }
 .about-hero-art img,
 .solutions-hero-art img,
 .contact-hero-art img,
-.careers-hero-art img {
+.careers-hero-art img,
+.about-hero-art video,
+.solutions-hero-art video,
+.contact-hero-art video,
+.careers-hero-art video {
   display: block;
   width: 100%;
   height: auto;
@@ -1005,7 +1009,11 @@ input:focus, textarea:focus {
   .about-hero-art img,
   .solutions-hero-art img,
   .contact-hero-art img,
-  .careers-hero-art img { max-height: 190px; object-position: center; }
+  .careers-hero-art img,
+  .about-hero-art video,
+  .solutions-hero-art video,
+  .contact-hero-art video,
+  .careers-hero-art video { max-height: 190px; object-position: center; }
   .careers-hero .hero-sub { margin-left: auto; margin-right: auto; }
 }
 @media (max-width: 700px) {
